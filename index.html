@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="assets/css/global.css">
+</head>
+
+<body>
+
+    <div class="header">
+
+    </div>
+
+    <div class="container">
+
+        <div class="calculator">
+
+            <div class="resultArea">
+                <button class="delete">-></button>
+
+                <input type="text" id="term" class="active" minlength="1" value="0">
+            </div>
+            <div class="buttonsArea">
+                <div class="row">
+                    <button class="function" id="clearButton">AC</button>
+                    <button class="function">+/-</button>
+                    <button class="function">%</button>
+                    <button class="operator">/</button>
+                </div>
+                <div class="row">
+                    <button class="number" onclick="addNumber(this)" data-numero="7">7</button>
+                    <button class="number" onclick="addNumber(this)" data-numero="8">8</button>
+                    <button class="number" onclick="addNumber(this)" data-numero="9">9</button>
+                    <button class="operator">*</button>
+                </div>
+                <div class="row">
+                    <button class="number" onclick="addNumber(this)" data-numero="4">4</button>
+                    <button class="number" onclick="addNumber(this)" data-numero="5">5</button>
+                    <button class="number" onclick="addNumber(this)" data-numero="6">6</button>
+                    <button class="operator">-</button>
+                </div>
+                <div class="row">
+                    <button class="number" onclick="addNumber(this)" data-numero="1">1</button>
+                    <button class="number" onclick="addNumber(this)" data-numero="2">2</button>
+                    <button class="number" onclick="addNumber(this)" data-numero="3">3</button>
+                    <button class="operator">+</button>
+                </div>
+                <div class="row">
+                    <button class="number" onclick="addNumber(this)" data-numero="0" id="zero">0</button>
+                    <button class="number" onclick="addNumber(this)" data-numero=".">,</button>
+                    <button class="operator">=</button>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="history">
+
+
+
+        </div>
+
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>
