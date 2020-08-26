@@ -24,8 +24,10 @@ function addNumber(element) {
         term.value = element.getAttribute('data-numero');
 
     } else {
-
-        term.value += element.getAttribute('data-numero');
+        //limite de 8 caracteres para o texto ficar arrumado
+        if(term.textLength <8){
+            term.value += element.getAttribute('data-numero');
+        }
 
     }
 
