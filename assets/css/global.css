@@ -32,7 +32,7 @@ body {
 
 .calculator {
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
@@ -49,12 +49,12 @@ body {
 .resultArea>input {
     opacity: 0;
     border: none;
-    height: 50px;
-    font-size: 48px;
+    height: 80px;
+    font-size: 58px;
     right: 0;
     background-color: white;
     color: black;
-    width: 170px;
+    width: 300px;
     margin-left: 0px;
     text-align: right;
     border-radius: 10px;
@@ -62,11 +62,21 @@ body {
 }
 .result
 .buttonsArea {
-    width: 400px
+    width: 400px;
+}
+.delete{
+    position: absolute;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: 10px;
+    border: none;
+}
+.delete > i{
+    font-size: 40px;
 }
 
 #zero {
-    width: 85px;
+    width: 167px;
 }
 
 .resultArea>input.active {
@@ -74,36 +84,46 @@ body {
 }
 
 .number {
+    font-weight: bold !important;
     outline: 0;
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     background-color: #252533;
     color: #ffffff;
-    border-radius: 60px;
-    margin: 2px;
+    border-radius: 70px;
+    margin: 10px;
     border: none;
+    font-size: 30px;
 }
 
 .function {
     outline: 0;
-    width: 40px;
-    height: 40px;
+    width: 70px;
+    height: 70px;
     background-color: #aa815b;
     color: white;
-    border-radius: 20px;
-    margin: 2px;
+    border-radius: 70px;
+    margin: 10px;
     border: none;
+    font-size: 30px;
+    font-weight: bold !important;
+}
+.function > i {
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .operator {
+    font-weight: bold !important;
     outline: 0;
-    width: 40px;
-    height: 40px;
+    width: 70px;
+    height: 70px;
     background-color: #dd7d19;
     color: rgb(12, 8, 8);
-    border-radius: 20px;
-    margin: 2px;
+    border-radius: 70px;
+    margin: 10px;
     border: none;
+    font-size: 30px;
 }
 
 .history {}
