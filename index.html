@@ -18,10 +18,9 @@
         <div class="calculator">
 
             <div class="resultArea">
-                <label id="label"></label>
-                <br>
-                <label id="result">0</label>
-                <br>
+                <div class="label">
+                    <label id="label"></label>
+                </div>
                 <input type="text" id="term" class="active" minlength="1" maxlength="8" value="0">
                 <button id="deleteButton">
                     <i class="fas fa-backspace"></i>
@@ -38,7 +37,7 @@
                     <button class="number" onclick="addNumber(this)" data-numero="7">7</button>
                     <button class="number" onclick="addNumber(this)" data-numero="8">8</button>
                     <button class="number" onclick="addNumber(this)" data-numero="9">9</button>
-                    <button class="operator" onclick="addOperation(this)" data-operation="x"><i class="fas fa-times"></i></button>
+                    <button class="operator" onclick="addOperation(this)" data-operation="*"><i class="fas fa-times"></i></button>
                 </div>  
                 <div class="row">
                     <button class="number" onclick="addNumber(this)" data-numero="4">4</button>

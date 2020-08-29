@@ -13,7 +13,6 @@ window.onload = () => {
     clearButton.onclick = () => {
         document.getElementById("term").value = "0";
         document.getElementById("label").innerText = " ";
-        document.getElementById("result").innerText = "0";
     }
     
     deleteButton.onclick = () => {
@@ -65,14 +64,19 @@ addOperation = (element) => {
 
     const term = document.getElementById("term");
     const label = document.getElementById("label");
-    const result = document.getElementById("result");
+    
+    if(operation == '='){
+        label.innerText += (" " + term.value);
+        
+        term.value = eval(label.innerText);
 
-    label.innerText += (term.value + element.getAttribute('data-operation'));
-
-    if(operation == "+") {
-        const aux = parseInt(result.innerText) + parseInt(term.value);
-        result.innerText = aux;
+        label.innerText = "";
+    } else {
+        if(label.innerText == ""){
+            label.innerText += (term.value + " " + element.getAttribute('data-operation'));
+        } else {
+            label.innerText += (" " + term.value + " " + element.getAttribute('data-operation'));
+        }
+        term.value = '0';
     }
-
-    term.value = '0';
 }

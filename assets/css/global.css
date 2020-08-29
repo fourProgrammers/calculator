@@ -64,7 +64,7 @@ body {
     margin-bottom: 16px;
     outline: none;
 }
-.resultArea>label {
+.resultArea .label {
     position: absolute;
     color: #f8f8f2;
     font-size: 0.8rem;
