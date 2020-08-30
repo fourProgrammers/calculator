@@ -1,8 +1,4 @@
 window.onload = () => {
-    const sumButton = document.getElementById("sumButton");
-    const subButton = document.getElementById("subButton");
-    const multButton = document.getElementById("multButton");
-    const divButton = document.getElementById("divButton");
     const clearButton = document.getElementById("clearButton");
     const deleteButton = document.getElementById("deleteButton");
     const plusMinusButton = document.getElementById("plusMinusButton");
@@ -34,7 +30,6 @@ window.onload = () => {
         document.getElementById("term").value = parseFloat(valor) / 100;
     }
 }
-
 addNumber = (element) => {
 
     const term = document.getElementById("term");

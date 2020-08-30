@@ -13,58 +13,47 @@
 
 <body>
 
-    <div class="container">
+    <div class="calculator">
 
-        <div class="calculator">
-
-            <div class="resultArea">
-                <div class="label">
-                    <label id="label"></label>
-                </div>
-                <input type="text" id="term" class="active" minlength="1" maxlength="8" value="0">
-                <button id="deleteButton">
-                    <i class="fas fa-backspace"></i>
-                </button>
+        <div class="resultArea">
+            <div class="label">
+                <label id="label"></label>
             </div>
-            <div class="buttonsArea">
-                <div class="row">
-                    <button class="function" id="clearButton">AC</button>
-                    <button class="function" id="plusMinusButton">+/-</button>
-                    <button class="function" id="percentageButton"><i class="fas fa-percentage"></i></button>
-                    <button class="operator" onclick="addOperation(this)" data-operation="/"><i class="fas fa-divide"></i></button>
-                </div>
-                <div class="row">
-                    <button class="number" onclick="addNumber(this)" data-numero="7">7</button>
-                    <button class="number" onclick="addNumber(this)" data-numero="8">8</button>
-                    <button class="number" onclick="addNumber(this)" data-numero="9">9</button>
-                    <button class="operator" onclick="addOperation(this)" data-operation="*"><i class="fas fa-times"></i></button>
-                </div>  
-                <div class="row">
-                    <button class="number" onclick="addNumber(this)" data-numero="4">4</button>
-                    <button class="number" onclick="addNumber(this)" data-numero="5">5</button>
-                    <button class="number" onclick="addNumber(this)" data-numero="6">6</button>
-                    <button class="operator" onclick="addOperation(this)" data-operation="-"><i class="fas fa-minus"></i></button>
-                </div>
-                <div class="row">
-                    <button class="number" onclick="addNumber(this)" data-numero="1">1</button>
-                    <button class="number" onclick="addNumber(this)" data-numero="2">2</button>
-                    <button class="number" onclick="addNumber(this)" data-numero="3">3</button>
-                    <button class="operator" onclick="addOperation(this)" data-operation="+"><i class="fas fa-plus"></i></button>
-                </div>
-                <div class="row">
-                    <button class="number" onclick="addNumber(this)" data-numero="0" id="zero">0</button>
-                    <button class="number" onclick="addNumber(this)" data-numero=".">,</button>
-                    <button class="operator" onclick="addOperation(this)" data-operation="="><i class="fas fa-equals"></i></button>
-                </div>
-            </div>
-
+            <input type="text" id="term" class="active" minlength="1" maxlength="8" value="0">
+            <button id="deleteButton">
+                <i class="fas fa-backspace"></i>
+            </button>
         </div>
-
-
-        <div class="history">
-
-
-
+        <div class="buttonsArea">
+            <div class="row">
+                <button class="function" id="clearButton">AC</button>
+                <button class="function" id="plusMinusButton">+/-</button>
+                <button class="function" id="percentageButton"><i class="fas fa-percentage"></i></button>
+                <button class="operator" onclick="addOperation(this)" data-operation="/"><i class="fas fa-divide"></i></button>
+            </div>
+            <div class="row">
+                <button class="number" onclick="addNumber(this)" data-numero="7">7</button>
+                <button class="number" onclick="addNumber(this)" data-numero="8">8</button>
+                <button class="number" onclick="addNumber(this)" data-numero="9">9</button>
+                <button class="operator" onclick="addOperation(this)" data-operation="*"><i class="fas fa-times"></i></button>
+            </div>  
+            <div class="row">
+                <button class="number" onclick="addNumber(this)" data-numero="4">4</button>
+                <button class="number" onclick="addNumber(this)" data-numero="5">5</button>
+                <button class="number" onclick="addNumber(this)" data-numero="6">6</button>
+                <button class="operator" onclick="addOperation(this)" data-operation="-"><i class="fas fa-minus"></i></button>
+            </div>
+            <div class="row">
+                <button class="number" onclick="addNumber(this)" data-numero="1">1</button>
+                <button class="number" onclick="addNumber(this)" data-numero="2">2</button>
+                <button class="number" onclick="addNumber(this)" data-numero="3">3</button>
+                <button class="operator" onclick="addOperation(this)" data-operation="+"><i class="fas fa-plus"></i></button>
+            </div>
+            <div class="row">
+                <button class="number" onclick="addNumber(this)" data-numero="0" id="zero">0</button>
+                <button class="number" onclick="addNumber(this)" data-numero=".">,</button>
+                <button class="operator" onclick="addOperation(this)" data-operation="="><i class="fas fa-equals"></i></button>
+            </div>
         </div>
 
     </div>
